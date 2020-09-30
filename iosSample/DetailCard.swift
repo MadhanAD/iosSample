@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct DetailCard: View {
+    
+    let titleText: String
+    
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Turtle Rock")
+            Text(self.titleText)
                 .font(.title)
             HStack{
-                Text("Joshua tree national park")
+                Text("Josdwdhua tree national park")
                     .font(.subheadline)
                 Spacer()
                 Text("California")
@@ -25,6 +28,6 @@ struct DetailCard: View {
 
 struct DetailCard_Previews: PreviewProvider {
     static var previews: some View {
-        DetailCard()
+        DetailCard(titleText: "Dummy Title")
     }
 }
